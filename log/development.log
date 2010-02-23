@@ -6356,3 +6356,25 @@ Processing HomeController#search (for 127.0.0.1 at 2010-02-20 11:22:03) [POST]
 Rendering home/search
 Rendered home/_results (1536.7ms)
 Completed in 5032ms (View: 1872, DB: 0) | 200 OK [http://localhost/home/search?method=get]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-22 21:06:24) [GET]
+
+SyntaxError (/Users/dbouwman/ror/agsrubyfu/lib/arcserver/soap/map_server.rb:148: syntax error, unexpected $end, expecting kEND):
+  lib/arcserver/map_server.rb:3
+  lib/arcserver.rb:7
+  app/controllers/home_controller.rb:1
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (127.6ms)
+Rendered rescues/_request_and_response (4.4ms)
+Rendering rescues/layout (internal_server_error)
